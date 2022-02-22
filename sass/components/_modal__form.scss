@@ -1,0 +1,154 @@
+.modal__form {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 28px;
+  }
+}
+
+.label-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: $title-color;
+  left: 15px;
+  top: 30px;
+  transition: fill 250ms $transition-timing-function;
+
+  .form-input:focus + .form-label & {
+    fill: $icon-accent;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 4px);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+}
+
+.form-input,
+.comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 250ms $transition-timing-function,
+    outline 250ms $transition-timing-function;
+}
+
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+    outline: $accent-color;
+  }
+}
+
+.comment {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+    outline: $accent-color;
+  }
+}
+
+.form-field__policy {
+  text-align: center;
+
+  & a {
+    color: $accent-color;
+  }
+}
+
+.comment-field {
+  margin-bottom: 20px;
+}
+
+.label-checkbox {
+  padding-left: 23px;
+  position: relative;
+}
+
+.policy-check {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: border-color 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function;
+
+  .checkbox:checked + .label-checkbox & {
+    border-color: $icon-accent;
+    background-color: $icon-accent;
+  }
+}
+
+.icon-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+  transition: visibility 250ms $transition-timing-function;
+
+  .checkbox:checked + .label-checkbox & {
+    visibility: visible;
+  }
+}
+
+.checkbox {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.wrapper-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modal__btn {
+  @extend %btn;
+  min-width: 200px;
+  height: 50px;
+}

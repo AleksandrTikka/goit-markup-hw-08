@@ -1,0 +1,30 @@
+// .address__list {
+//   @extend %list;
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
+
+// .address__item:not(:last-of-type) {
+//   margin-bottom: 9px;
+// }
+
+// .address__link {
+//   @extend %link;
+//   font-style: normal;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   transition: color 250ms $transition-timing-function;
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+
+//   &--city {
+//     color: #ffffff;
+//   }
+
+//   &--mail,
+//   &--tel {
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
