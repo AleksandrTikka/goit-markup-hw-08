@@ -1,13 +1,14 @@
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background-color: #2f303a;
-// }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
 
-// .footer__container {
-//   @extend %container;
-//   display: flex;
-// }
+.footer__container {
+  @extend %container;
+  text-align: center;
+  //   display: flex;
+}
 // .footer .link {
 //   transition: color 250ms $transition-timing-function;
 // }

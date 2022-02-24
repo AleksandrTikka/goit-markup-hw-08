@@ -1,12 +1,15 @@
-// .column {
-//   &__title {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
+.column {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
 
-//     text-transform: uppercase;
+    text-transform: uppercase;
 
-//     color: #ffffff;
-//     margin-bottom: 20px;
-//   }
-// }
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
