@@ -1,4 +1,7 @@
 .column {
+  @media screen and (max-width: 1199.8px) {
+    text-align: center;
+  }
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -9,7 +12,9 @@
     color: #ffffff;
     margin-bottom: 20px;
   }
-  &:not(:last-child) {
-    margin-bottom: 60px;
-  }
+  // &:not(:first-child) {
+  //   @media screen and (max-width: 767.9px) {
+  //     margin-top: 60px;
+  //   }
+  // }
 }

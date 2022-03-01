@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: $secondary-background-color;
   border-bottom: 1px solid #ececec;
 
@@ -15,12 +16,49 @@
   &__navigation {
     padding-top: 16px;
     padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
       padding-top: 0;
       padding-bottom: 0;
-      display: flex;
-      align-items: center;
     }
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  & .icon__close {
+    display: none;
+  }
+  &.is-open .icon__close {
+    display: block;
+  }
+  &.is-open .icon__open {
+    display: none;
+  }
+}
+
+.menu__container {
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  &.is-open {
+    display: block;
   }
 }

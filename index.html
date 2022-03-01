@@ -32,6 +32,18 @@
                         <a href="" class="site-nav__link link">Контакты</a>
                     </li>
                 </ul>
+                <button type="button" class="menu-button" 
+                aria-expanded="false"                
+                data-menu-button>
+                    <svg 
+                    width="40" 
+                    height="40"
+                    area-label="Переключатель мобильного меню">
+                        <use class="icon__close" href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="icon__open" href="./images/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+                <div class="menu__container" data-menu>sdgasdgasdgagasdg</div>
             </nav>
             <ul class="list contacts__list">
                 <li class= "contacts__item">
@@ -348,6 +360,7 @@
     <!--Подвал страницы-->
     <footer class="footer">
         <div class="container footer__container">
+            
             <div class="column address__column">
                 <a href="/" class="logo footer__logo">
                     <span>Web</span><span class="logo__text logo__text--white">Studio</span>
@@ -396,8 +409,8 @@
                         </a>
                     </li>
                 </ul>
-                
-            </div>
+            
+         </div>
             <div class="column mailing__column">
                 <label for="mailing-user-mail" class="column__title">Подпишитесь на рассылку</label>
                     <div class="mailing__form">
@@ -474,5 +487,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
