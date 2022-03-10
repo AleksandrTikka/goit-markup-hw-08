@@ -5,6 +5,7 @@
 
   &__container {
     @extend %container;
+    position: relative;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -18,7 +19,6 @@
     padding-bottom: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
       padding-top: 0;
@@ -29,11 +29,15 @@
 }
 
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background: transparent;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -50,25 +54,31 @@
   }
 }
 
+.menu-open__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .menu__container {
   background-color: #ffffff;
 
-  &.is-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   @media screen and (max-width: 767.8px) {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 40px;
-    height: 100%;
   }
 
   @media screen and (min-width: 768px) {
