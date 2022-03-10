@@ -6,14 +6,12 @@
     0px 2px 1px rgba1(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms $transition-timing-function;
-  @media screen and (max-width: 480px) {
-    width: calc(100% - 30px);
-  }
-  @media screen and (min-width: 480px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 30px);
 
+  @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
   }
