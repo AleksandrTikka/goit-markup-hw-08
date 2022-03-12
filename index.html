@@ -165,16 +165,31 @@
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="work__list list">
                 <li class="work__item">
-                    <img src="./images/our_work1.jpg" class="thumb" alt="Разработка десктопной версии" width="370" />
-                    <div class="work__overlay">Десктопные приложения</div>
+                    <picture>
+                        <source srcset="
+                                            ./images/our_work1.jpg 1x, 
+                                            ./images/our_work1_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img src="./images/our_work1.jpg" class="thumb" alt="Разработка десктопной версии" width="370" />
+                        <div class="work__overlay">Десктопные приложения</div>
+                    </picture>
                 </li>
                 <li class="work__item">
-                    <img src="./images/our_work2.jpg" class="thumb" alt="Разработка мобильной версии" width="370" />
-                    <div class="work__overlay">Мобильные приложения</div>
+                   <picture>
+                        <source srcset="
+                                            ./images/our_work2.jpg 1x, 
+                                            ./images/our_work2_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img src="./images/our_work2.jpg" class="thumb" alt="Разработка мобильной версии" width="370" />
+                        <div class="work__overlay">Мобильные приложения</div>
+                   </picture>
                 </li>
                 <li class="work__item">
-                    <img src="./images/our_work3.jpg" class="thumb" alt="Разработка планшетной версии" width="370" />
-                    <div class="work__overlay">Дизайнерские решения</div>
+                    <picture>
+                        <source srcset="
+                                            ./images/our_work3.jpg 1x, 
+                                            ./images/our_work3_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img src="./images/our_work3.jpg" class="thumb" alt="Разработка планшетной версии" width="370" />
+                        <div class="work__overlay">Дизайнерские решения</div>
+                    </picture>
                 </li>
             </ul>
             </div>
@@ -184,7 +199,18 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item">
-                    <img src="./images/our_team1.jpg" class="team__thumb" alt="Мужчина с бороодой в очках и рубашке" />
+                    <picture>
+                        <source srcset="
+                                            ./images/our_team1.jpg 1x, 
+                                            ./images/our_team1_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                            ./images/our_team1_tab.jpg 1x, 
+                                            ./images/our_team1_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="
+                                            ./images/our_team1_mob.jpg 1x, 
+                                            ./images/our_team1_mob_2x.jpg 2x" media="(max-width: 767.8px)" />
+                        <img src="./images/our_team1.jpg" class="team__thumb" alt="Мужчина с бороодой в очках и рубашке" />
+                    </picture>
                     <div class="team__description">
                         <h3 class="team__names">Игорь Демьяненко</h3>
                         <p class="text team__text">Product Designer</p>
@@ -225,7 +251,18 @@
                     </div>            
                 </li>
                 <li class="team__item">
-                    <img src="./images/our_team2.jpg" class="team__thumb" alt="Девушка с улыбкой в очках и в пиджаке"/>
+                    <picture>
+                        <source srcset="
+                                                                ./images/our_team2.jpg 1x, 
+                                                                ./images/our_team2_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                                ./images/our_team2_tab.jpg 1x, 
+                                                                ./images/our_team2_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                                ./images/our_team2_mob.jpg 1x, 
+                                                                ./images/our_team2_mob_2x.jpg 2x" media="(max-width: 767.8px)" />
+                        <img src="./images/our_team2.jpg" class="team__thumb" alt="Девушка с улыбкой в очках и в пиджаке" />
+                    </picture>
                     <div class="team__description"><h3 class="team__names">Ольга Репина</h3>
                     <p class="text team__text">Frontend Developer</p>
                     <ul class="social__list list">
@@ -265,7 +302,18 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/our_team3.jpg" class="team__thumb" alt="Мужчина в рубашке"/>
+                    <picture>
+                        <source srcset="
+                                                                ./images/our_team3.jpg 1x, 
+                                                                ./images/our_team3_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                                ./images/our_team3_tab.jpg 1x, 
+                                                                ./images/our_team3_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                                ./images/our_team3_mob.jpg 1x, 
+                                                                ./images/our_team3_mob_2x.jpg 2x" media="(max-width: 767.8px)" />
+                        <img src="./images/our_team3.jpg" class="team__thumb" alt="Мужчина в рубашке" />
+                    </picture>
                     <div class="team__description"><h3 class="team__names">Николай Тарасов</h3>
                     <p class="text team__text">Marketing</p>
                     <ul class="social__list list">
@@ -305,7 +353,18 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/our_team4.jpg" class="team__thumb" alt="Мужчина в футболке и очках на улице"/>
+                    <picture>
+                        <source srcset="
+                                                                ./images/our_team4.jpg 1x, 
+                                                                ./images/our_team4_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                                ./images/our_team4_tab.jpg 1x, 
+                                                                ./images/our_team4_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                                ./images/our_team4_mob.jpg 1x, 
+                                                                ./images/our_team4_mob_2x.jpg 2x" media="(max-width: 767.8px)" />
+                        <img src="./images/our_team4.jpg" class="team__thumb" alt="Мужчина в футболке и очках на улице" />
+                    </picture>
                     <div class="team__description"><h3 class="team__names">Михаил Ермаков</h3>
                     <p class="text team__text">UI Designer</p>
                     <ul class="social__list list">
