@@ -1,22 +1,19 @@
 .address__column {
   // text-align: center;
   @media screen and (min-width: 768px) {
-    margin-left: 76px;
+    // margin-left: 76px;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 0;
+    // margin-left: 0;
   }
 }
 
 .address__list {
   @extend %list;
-  //   padding-top: 0;
-  //   padding-bottom: 0;
 }
 
 .address__item:not(:last-of-type) {
   margin-bottom: 8px;
-  //   margin-bottom: 9px;
 }
 
 .address__link {

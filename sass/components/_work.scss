@@ -5,10 +5,6 @@
   }
 }
 
-.work__container {
-  @extend %container;
-}
-
 .work__list {
   @extend %list;
   display: flex;

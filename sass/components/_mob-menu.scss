@@ -19,7 +19,7 @@
   }
   &__container {
     position: relative;
-    @extend %container;
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -61,12 +61,6 @@
   &--active {
     color: $accent-color;
   }
-}
-
-.mob-soc__list {
-  @extend %list;
-  display: flex;
-  justify-content: center;
 }
 
 .mob-soc__item:not(:last-child) {
@@ -119,6 +113,11 @@
   letter-spacing: 0.02em;
 
   color: $primary-text-color;
+}
+
+.mob-soc__list {
+  @extend %list;
+  display: flex;
 }
 
 .mob-soc__link {

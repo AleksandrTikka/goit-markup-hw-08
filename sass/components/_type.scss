@@ -22,6 +22,7 @@
 }
 
 .type__link {
+  height: 100%;
   @extend %link;
   transition: box-shadow 250ms $transition-timing-function;
 
@@ -65,9 +66,7 @@
 }
 
 .type__example {
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 20px;
   color: $title-color;
   font-weight: 700;
   font-size: 18px;
@@ -77,14 +76,13 @@
 
 .type__text {
   @extend %text;
-  margin-bottom: 20px;
-  margin-left: 20px;
   font-size: 16px;
   line-height: 1.87;
 }
 
 .type__description {
-  margin: 0;
+  flex-grow: 1;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

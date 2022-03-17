@@ -46,7 +46,7 @@
   color: $primary-text-color;
 
   transition: color 250ms $transition-timing-function;
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;

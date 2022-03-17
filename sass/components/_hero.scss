@@ -1,8 +1,6 @@
 .hero {
   width: 100%;
   height: auto;
-  // width: 480px;
-  // height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -81,8 +79,9 @@
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-  @media screen and(min-width:1200) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }

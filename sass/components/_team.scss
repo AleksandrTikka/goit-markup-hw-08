@@ -3,10 +3,6 @@
   // padding-top: 60px;
 }
 
-.team__container {
-  @extend %container;
-}
-
 .team__list {
   @extend %list;
 
@@ -46,7 +42,7 @@
 
 .team__description {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
 .team__names {
   margin-bottom: 10px;
